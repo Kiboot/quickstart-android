@@ -9,10 +9,10 @@ import android.support.test.filters.LargeTest;
 
 import com.google.firebase.quickstart.auth.java.AnonymousAuthActivity;
 
-import org.junit.jupiter.api.AfterEach;
+import org.junit.After;
+import org.junit.Before;
 import org.junit.Rule;
-import org.junit.jupiter.api.Test;
-import org.junit.jupiter.api.BeforeEach;
+import org.junit.Test;
 import org.junit.runner.RunWith;
 
 import static android.support.test.espresso.Espresso.onView;
@@ -34,7 +34,7 @@ public class AnonymousTest {
     public ActivityTestRule<AnonymousAuthActivity> mActivityTestRule =
             new ActivityTestRule<>(AnonymousAuthActivity.class);
 
-    @BeforeEach
+    @Before
     public void setUp() {
         if (mActivityResource != null) {
             Espresso.unregisterIdlingResources(mActivityResource);
@@ -45,7 +45,7 @@ public class AnonymousTest {
         Espresso.registerIdlingResources(mActivityResource);
     }
 
-    @AfterEach
+    @After
     public void tearDown() {
         if (mActivityResource != null) {
             Espresso.unregisterIdlingResources(mActivityResource);

@@ -11,6 +11,6 @@
       Your Twitter Key and Secret, see README.
     -->
     <!-- TODO(developer): REPLACE -->
-    <string name="twitter_consumer_key">45H3tya0C3cNevbYQwDJcFtaB</string>
-    <string name="twitter_consumer_secret">SEmfGZZXmOaBx6tPM0qYEdMeDCRiAK0dG5uvgLpyWwvOPwj1HF</string>
+    <string name="twitter_consumer_key">REPLACE_ME</string>
+    <string name="twitter_consumer_secret">REPLACE_ME</string>
 </resources>
